@@ -1,0 +1,17 @@
+﻿<Page x:Class="ShutdownTimer.Methods.Timer"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ShutdownTimer.Methods"
+      mc:Ignorable="d" 
+      d:DesignHeight="310" d:DesignWidth="386" 
+      Title="Timer">
+
+    <Grid>
+        <ComboBox HorizontalAlignment="Left" Margin="95,68,0,0" VerticalAlignment="Top" Width="120" x:Name="Hour" SelectionChanged="Hour_SelectionChanged"  />
+        <ComboBox HorizontalAlignment="Left" Margin="95,126,0,0" VerticalAlignment="Top" Width="120" x:Name="Minute" />
+        <ComboBox HorizontalAlignment="Left" Margin="95,190,0,0" VerticalAlignment="Top" Width="120" x:Name="Second" />
+
+    </Grid>
+</Page>

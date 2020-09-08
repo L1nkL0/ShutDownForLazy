@@ -5,9 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ShutdownTimer"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="413" MaxHeight="450" MaxWidth="413" MinHeight="450" MinWidth="413">
     <Grid>
-        <Button x:Name="StartTime" Content="Button" HorizontalAlignment="Left" Margin="342,326,0,0" VerticalAlignment="Top" Width="75" Click="StartTime_Click"/>
+        <Button x:Name="StartTime" Content="Запустить" HorizontalAlignment="Left" Margin="10,365,0,0" VerticalAlignment="Top" Width="75" Click="StartTime_Click"/>
+        <Button x:Name="СancelTime" Content="Отмена" HorizontalAlignment="Left" Margin="321,365,0,0" VerticalAlignment="Top" Width="75" Click="СancelTime_Click"/>
+        <Frame Content="Frame" HorizontalAlignment="Left" Height="310" Margin="10,50,0,0" VerticalAlignment="Top" Width="386" NavigationUIVisibility="Hidden" Source="/ShutdownTimer;component/Methods/Timer.xaml"/>
 
     </Grid>
 </Window>
