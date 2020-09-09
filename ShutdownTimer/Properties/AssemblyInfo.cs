@@ -8,9 +8,9 @@ using System.Windows;
 // набор атрибутов. Измените значения этих атрибутов, чтобы изменить сведения,
 // связанные со сборкой.
 [assembly: AssemblyTitle("ShutdownTimer")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Для удобного выставления автовыключения пк")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("FastAsARabbit")]
 [assembly: AssemblyProduct("ShutdownTimer")]
 [assembly: AssemblyCopyright("Copyright ©  2020")]
 [assembly: AssemblyTrademark("")]

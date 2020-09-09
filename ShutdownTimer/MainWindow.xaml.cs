@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -25,22 +26,9 @@ namespace ShutdownTimer
         public MainWindow()
         {
             InitializeComponent();
-        }
-
-        private void StartTime_Click(object sender, RoutedEventArgs e)
-        {
-            Process.Start("cmd", "/c" + $@"shutdown /s /t {""}");    //параметр /c для закрытия консоли
-
 
         }
-        Timer timer = new Timer();
-        private void СancelTime_Click(object sender, RoutedEventArgs e)
-        {
-            //Process.Start("cmd", "/c" + @"shutdown /a");
 
-            string h = timer._h();
-            MessageBox.Show(h);
-            
-        }
+       
     }
 }

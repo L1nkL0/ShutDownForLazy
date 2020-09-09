@@ -5,13 +5,17 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:ShutdownTimer.Methods"
       mc:Ignorable="d" 
-      d:DesignHeight="310" d:DesignWidth="386" 
-      Title="Timer">
+      Title="Timer" Height="309" Width="293">
 
-    <Grid>
-        <ComboBox HorizontalAlignment="Left" Margin="95,68,0,0" VerticalAlignment="Top" Width="120" x:Name="Hour" SelectionChanged="Hour_SelectionChanged"  />
-        <ComboBox HorizontalAlignment="Left" Margin="95,126,0,0" VerticalAlignment="Top" Width="120" x:Name="Minute" />
-        <ComboBox HorizontalAlignment="Left" Margin="95,190,0,0" VerticalAlignment="Top" Width="120" x:Name="Second" />
+    <Grid Background="#FFEAF9A8">
+        <ComboBox HorizontalAlignment="Left" Margin="85,53,0,0" VerticalAlignment="Top" Width="120" x:Name="Hour" Background="Black"  />
+        <ComboBox HorizontalAlignment="Left" Margin="85,111,0,0" VerticalAlignment="Top" Width="120" x:Name="Minute" />
+        <ComboBox HorizontalAlignment="Left" Margin="85,175,0,0" VerticalAlignment="Top" Width="120" x:Name="Second" />
+        <Button x:Name="Cancle" Content="Отмена" HorizontalAlignment="Left" Margin="200,254,0,0" VerticalAlignment="Top" Width="75" Click="Cancle_Click" Background="#FF80FFF3" />
+        <Button x:Name="Start" Content="Старт" HorizontalAlignment="Left" Margin="20,254,0,0" VerticalAlignment="Top" Width="75" Click="Start_Click" Background="#FF80FFF3" />
+        <Label Content="Часы" HorizontalAlignment="Left" Margin="10,53,0,0" VerticalAlignment="Top"/>
+        <Label Content="Минуты" HorizontalAlignment="Left" Margin="10,107,0,0" VerticalAlignment="Top"/>
+        <Label Content="Секунды" HorizontalAlignment="Left" Margin="10,171,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Page>

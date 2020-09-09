@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Process = System.Diagnostics.Process;
 
 namespace ShutdownTimer.Methods
 {
@@ -55,17 +56,27 @@ namespace ShutdownTimer.Methods
             
         }
 
-        public string h  ;
+        
 
-        public string _h()
+        public string TimeInSecondsForTimer(string h,string m,string s)
         {
-            string h = Hour.SelectedItem.ToString();
-            return h;
+            int time = 0;
+            time = (Convert.ToInt32(h)*60*60) + (Convert.ToInt32(m) *60) + Convert.ToInt32(s);
+            return Convert.ToString(time);
         }
 
-        private void Hour_SelectionChanged(object sender, SelectionChangedEventArgs e)
+
+        private void Start_Click(object sender, RoutedEventArgs e)
         {
-            Hour.SelectedIndex = Hour.SelectedIndex;
+            Process.Start("cmd", "/c" + $@"shutdown /s /t {TimeInSecondsForTimer(Hour.Text, Minute.Text, Second.Text)}");    //параметр /c для закрытия консоли
+            //MessageBox.Show(TimeInSecondsForTimer(Hour.Text, Minute.Text, Second.Text));
+        }
+
+
+        private void Cancle_Click(object sender, RoutedEventArgs e)
+        {
+            Process.Start("cmd", "/c" + @"shutdown /a");
+
         }
     }
 }
